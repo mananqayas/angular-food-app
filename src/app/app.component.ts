@@ -1,13 +1,15 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { BtnComponent } from './shared/btn/btn.component';
+import { DesertComponent } from './desert/desert.component';
+import { desserts } from '../desserts';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [BtnComponent, DesertComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
 })
 export class AppComponent {
-  title = 'shopping';
+  allDesserts = desserts;
 }

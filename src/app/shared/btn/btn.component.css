@@ -1,0 +1,75 @@
+.add-to-cart {
+  display: flex;
+  gap: var(--spacing-100);
+  border: 1px var(--color-rose-400) solid;
+  background: var(--color-white);
+  border-radius: var(--spacing-1100);
+  padding: var(--spacing-150);
+  align-items: center;
+  cursor: pointer;
+  font: var(--text-preset-4-bold);
+  width: 160px;
+  justify-content: center;
+  transition: var(--transition-default);
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 8px;
+  left: 50%; /* Center horizontally within the parent div */
+  transform: translate(
+    -50%,
+    50%
+  ); /* Center horizontally and move up by 50% of the button's height */
+}
+.add-to-cart:hover {
+  border: 1px var(--color-red) solid;
+  color: var(--color-red);
+}
+div {
+  position: relative;
+}
+.item-in-cart {
+  display: flex;
+  gap: var(--spacing-100);
+  color: var(--color-white);
+  background: var(--color-red);
+  border-radius: var(--spacing-1100);
+  padding: var(--spacing-150);
+  align-items: center;
+  cursor: pointer;
+  font: var(--text-preset-4-bold);
+  width: 160px;
+  justify-content: space-between;
+  transition: var(--transition-default);
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 8px;
+  left: 50%; /* Center horizontally within the parent div */
+  transform: translate(
+    -50%,
+    50%
+  ); /* Center horizontally and move up by 50% of the button's height */
+}
+
+.icon {
+  fill: currentColor;
+  transition: fill 0.3s;
+}
+
+.increase,
+.decrease {
+  color: var(--color-white);
+  background: transparent;
+  transition: var(--transition-default);
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--spacing-400);
+  border: 1px solid var(--color-white);
+}
+.increase:hover,
+.decrease:hover {
+  background: white;
+  color: var(--color-red);
+}

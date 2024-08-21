@@ -1,0 +1,24 @@
+.main {
+  position: relative;
+}
+
+img {
+  max-width: 300px;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-50);
+  margin-top: 50px;
+}
+.category {
+  color: var(--color-rose-500);
+}
+.title {
+  color: var(--color-rose-900);
+  font: var(--text-preset-3);
+}
+.price {
+  font: var(--text-preset-3);
+  color: var(--color-red);
+}

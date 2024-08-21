@@ -1,0 +1,22 @@
+main {
+  display: flex;
+  gap: var(--spacing-400);
+
+  margin: 100px auto;
+  max-width: 90vw;
+}
+#desserts {
+  flex: 1;
+}
+.all-desserts {
+  margin-top: var(--spacing-400);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-300);
+}
+.cart-items {
+  padding: var(--spacing-300);
+  background: var(--color-white);
+  height: max-content;
+  border-radius: var(--spacing-150);
+}

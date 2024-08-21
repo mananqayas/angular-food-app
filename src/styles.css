@@ -1,1 +1,60 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* COLOR VARIABLES */
+  --color-red: #c73b0f;
+  --color-rose-900: #260f08;
+  --color-rose-500: #87635a;
+  --color-rose-400: #ad8a85;
+  --color-rose-300: #caafa7;
+  --color-rose-100: #f5eeec;
+  --color-rose-50: #fcf8f6;
+  --color-green: #1ea575;
+  --color-black: #000;
+  --color-white: #fff;
+
+  /* FONT VARIABLES */
+  --font-family: "Red Hat Text", sans-serif;
+  --font-size-base: 1rem;
+  --line-height-base: 1.6;
+  --text-preset-1: bold 56px/1.2 var(--font-family);
+  --text-preset-2: bold 24px/1.25 var(--font-family);
+  --text-preset-3: 600 16px/1.5 var(--font-family);
+  --text-preset-4: 400 14px/1.2 var(--font-family);
+  --text-preset-4-bold: 600 14px/1.5 var(--font-family);
+
+  /* Spacing */
+
+  --spacing-1100: 88px;
+  --spacing-500: 40px;
+  --spacing-400: 32px;
+  --spacing-300: 24px;
+  --spacing-200: 16px;
+  --spacing-150: 12px;
+  --spacing-100: 8px;
+  --spacing-50: 4px;
+
+  /* Transition Variable */
+  --transition-default: all 0.3s ease-in-out;
+}
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  background: var(--color-rose-50);
+}
+
+h1 {
+  font: var(--text-preset-1);
+  color: var(--color-rose-900);
+}
+h2 {
+  font: var(--text-preset-2);
+  color: var(--color-red);
+}
